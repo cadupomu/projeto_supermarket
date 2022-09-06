@@ -61,7 +61,7 @@ public class ProdutoDAO extends DAO {
                 var  produto = new Produto();
                 produto.setNome(rs.getString("nome"));
                 produto.setPreco(rs.getDouble("preco"));
-                produto.setQuantidade(rs.getInt("matricula"));
+                produto.setQuantidade(rs.getInt("quantidade"));
                 produto.setTipo(rs.getString("tipo"));
                 produtos.add(produto);
             }
@@ -185,9 +185,9 @@ public class ProdutoDAO extends DAO {
         try {
             conn = getConnection();
             pstmt = conn.prepareStatement("select * from produto where id=?");
-            rs = pstmt.executeQuery();
-
             pstmt.setLong(1, id);
+            
+            rs = pstmt.executeQuery();
 
             Produto produto = new Produto();
 
@@ -202,7 +202,7 @@ public class ProdutoDAO extends DAO {
 
         } catch (SQLException e) {
                 e.printStackTrace();
-                System.err.println("Error on delete produto. Error: " + e.getMessage());
+                System.err.println("Error on finding produto. Error: " + e.getMessage());
                 return new Produto();
             } finally {
                 try {
