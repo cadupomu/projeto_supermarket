@@ -24,11 +24,7 @@ public class ProdutoDAO extends DAO {
             pstmt.setInt(3, produto.getQuantidade());
             pstmt.setString(4, produto.getTipo());
 
-            var response = pstmt.executeUpdate();
-
-            if(response != 0)
-                return Boolean.TRUE;
-            return Boolean.FALSE;
+            return (pstmt.executeUpdate() != 0) ? Boolean.TRUE : Boolean.FALSE;
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -94,12 +90,9 @@ public class ProdutoDAO extends DAO {
             pstmt.setDouble(2, produto.getPreco());
             pstmt.setInt(3, produto.getQuantidade());
             pstmt.setString(4, produto.getTipo());
+            pstmt.setInt(5, produto.getId());
 
-            var response = pstmt.executeUpdate();
-
-            if(response != 0)
-                return Boolean.TRUE;
-            return Boolean.FALSE;
+            return (pstmt.executeUpdate() != 0) ? Boolean.TRUE : Boolean.FALSE;
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -126,11 +119,7 @@ public class ProdutoDAO extends DAO {
 
             pstmt.setLong(1, id);
 
-            var response = pstmt.executeUpdate();
-
-            if(response != 0)
-                return Boolean.TRUE;
-            return Boolean.FALSE;
+            return (pstmt.executeUpdate() != 0) ? Boolean.TRUE : Boolean.FALSE;
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -149,18 +138,15 @@ public class ProdutoDAO extends DAO {
         }
     }
 
-    public boolean deleteAll() {
+    public boolean deleteAll(List<Produto> produtos) {
         PreparedStatement pstmt = null;
 
         try {
             conn = getConnection();
             pstmt = conn.prepareStatement("delete from table produto");
 
-            var response = pstmt.executeUpdate();
+            return (pstmt.executeUpdate() != 0) ? Boolean.TRUE : Boolean.FALSE;
 
-            if(response != 0)
-                return Boolean.TRUE;
-            return Boolean.FALSE;
         } catch (SQLException e) {
             e.printStackTrace();
             System.err.println("Error on delete table produto. Error: " + e.getMessage());

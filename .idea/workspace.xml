@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94ed5f61-e762-4059-a880-43bf86bd57db" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/supermercado/app/DeleteById.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/supermercado/app/FindById.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/supermercado/app/Update.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermercado/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermercado/model/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/supermercado/persist/ProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermercado/persist/ProdutoDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
