@@ -15,13 +15,13 @@ public class App {
         var nome = JOptionPane.showInputDialog(null, "Informe o nome do produto: ", "Input Nome", JOptionPane.QUESTION_MESSAGE);
         pro.setNome(nome);
 
-        var preco = JOptionPane.showInputDialog(null, "Informe o preço do produto: ", "Input Nome", JOptionPane.QUESTION_MESSAGE);
+        var preco = JOptionPane.showInputDialog(null, "Informe o preço do produto: ", "Input Preço", JOptionPane.QUESTION_MESSAGE);
         pro.setPreco(Double.valueOf(preco));
 
-        var quantidade = JOptionPane.showInputDialog(null, "Informe a quantidade: ", "Input Nome", JOptionPane.QUESTION_MESSAGE);
+        var quantidade = JOptionPane.showInputDialog(null, "Informe a quantidade: ", "Input Quantidade", JOptionPane.QUESTION_MESSAGE);
         pro.setQuantidade(Integer.parseInt(quantidade));
 
-        var tipo = JOptionPane.showInputDialog(null, "Informe o tipo do produto: ", "Input Nome", JOptionPane.QUESTION_MESSAGE);
+        var tipo = JOptionPane.showInputDialog(null, "Informe o tipo do produto: ", "Input Tipo", JOptionPane.QUESTION_MESSAGE);
         pro.setTipo(tipo);
 
         var situacao = "Ocorreu uma falha na gravação. Verifique o log";

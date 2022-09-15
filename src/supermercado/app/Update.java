@@ -1,6 +1,5 @@
 package supermercado.app;
 
-import supermercado.model.Produto;
 import supermercado.service.ProdutoService;
 
 import javax.swing.*;
@@ -8,25 +7,24 @@ import javax.swing.*;
 public class Update {
     public static void main(String[] args) {
         var service = new ProdutoService();
-        var produtos = service.findById(1L);
-        Produto pro = new Produto();
+        var pro = service.findById(1L);
 
         var nome = JOptionPane.showInputDialog(null, "Informe o nome do produto: ", "Input Nome", JOptionPane.QUESTION_MESSAGE);
         pro.setNome(nome);
 
-        var preco = JOptionPane.showInputDialog(null, "Informe o preço do produto: ", "Input Nome", JOptionPane.QUESTION_MESSAGE);
+        var preco = JOptionPane.showInputDialog(null, "Informe o preço do produto: ", "Input Preço", JOptionPane.QUESTION_MESSAGE);
         pro.setPreco(Double.valueOf(preco));
 
-        var quantidade = JOptionPane.showInputDialog(null, "Informe a quantidade: ", "Input Nome", JOptionPane.QUESTION_MESSAGE);
+        var quantidade = JOptionPane.showInputDialog(null, "Informe a quantidade: ", "Input Quantidade", JOptionPane.QUESTION_MESSAGE);
         pro.setQuantidade(Integer.parseInt(quantidade));
 
-        var tipo = JOptionPane.showInputDialog(null, "Informe o tipo do produto: ", "Input Nome", JOptionPane.QUESTION_MESSAGE);
+        var tipo = JOptionPane.showInputDialog(null, "Informe o tipo do produto: ", "Input Tipo", JOptionPane.QUESTION_MESSAGE);
         pro.setTipo(tipo);
 
         var situacao = "Ocorreu uma falha na gravação. Verifique o log";
         var iconeStatus = JOptionPane.ERROR_MESSAGE;
 
-        var response = service.save(pro);
+        var response = service.update(pro);
         if(response) {
             situacao = "Gravado com sucesso";
             iconeStatus = JOptionPane.INFORMATION_MESSAGE;

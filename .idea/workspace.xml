@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94ed5f61-e762-4059-a880-43bf86bd57db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/libs/slf4j-api-2.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/slf4j-jdk14-2.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/supermercado/app/DeleteAll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/supermercado/app/FindByName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/supermercado/app/FindByTipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_30.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_30.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supermercado/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermercado/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supermercado/persist/ProdutoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermercado/persist/ProdutoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/supermercado/service/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermercado/service/ProdutoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermercado/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermercado/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/supermercado/app/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/supermercado/app/Update.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
